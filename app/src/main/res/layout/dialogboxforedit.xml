@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:orientation="vertical"
+    android:layout_height="220dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Edit Roll Number "
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="#E3135A"
+        >
+    </EditText>
+<TextView
+    android:layout_marginLeft="23dp"
+    android:layout_marginTop="22dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Edit your Roll Number integer side "
+    android:textSize="18dp"
+    ></TextView>
+    <EditText
+        android:id="@+id/editroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="12"
+        android:inputType="number"
+        >
+    </EditText>
+<Button
+    android:id="@+id/apply"
+    android:layout_marginTop="23dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:backgroundTint="#E3135A"
+    android:textColor="@color/white"
+    android:text="Apply"
+    android:layout_gravity="center"
+    ></Button>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Attendence">
+<TextView
+    android:id="@+id/session_id"
+    android:textSize="20dp"
+    android:textColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="center"
+    android:background="#E3135A"></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:background="@drawable/serious2"
+            android:weightSum="5"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_marginTop="2dp"
+                    android:id="@+id/day"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:textSize="20dp"
+                    ></TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="3"
+                android:weightSum="4"
+                >
+                <EditText
+                    android:layout_weight="1"
+                    android:layout_marginLeft="55dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:id="@+id/datePicker"
+                    android:background="@drawable/backfrony"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Select Date " />
+
+                <TextView
+                    android:layout_marginLeft="65dp"
+                    android:id="@+id/course"
+                    android:background="@drawable/backfrony"
+                    android:layout_gravity="center"
+                    android:textColorHint="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:hint="your course"
+                    android:gravity="center"
+                    android:ems="7"
+                    ></TextView>
+            </LinearLayout>
+        </LinearLayout>
+       <FrameLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <ListView
+               android:background="@drawable/serious"
+               android:id="@+id/list_item_student"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"></ListView>
+           <de.hdodenhof.circleimageview.CircleImageView
+               android:layout_gravity="center"
+               android:layout_marginTop="200dp"
+               android:layout_marginLeft="114dp"
+               android:id="@+id/icon"
+               android:layout_width="58dp"
+               android:background="@drawable/iconvally"
+               android:layout_height="58dp"
+               android:src="@drawable/login"></de.hdodenhof.circleimageview.CircleImageView>
+       </FrameLayout>
+
+</LinearLayout>

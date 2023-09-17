@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/app"
+    tools:context=".Student_Data">
+
+<TextView
+    android:id="@+id/numOfStudents12"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#E3135A"
+    android:text="Enter Students Data"
+    android:gravity="center"
+    android:textColor="@color/white"
+    android:textSize="17dp"
+    ></TextView>
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="    Enter number Of students"
+        android:layout_marginTop="68dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <EditText
+        android:gravity="center"
+        android:id="@+id/studentDATA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:hint=" Total no. of Students"
+        android:background="@drawable/backfrony"
+        ></EditText>
+
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/backfrony"
+        android:backgroundTint="#09A6ED"
+        android:orientation="vertical">
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Enter String part of First Student     "></TextView>
+
+        <TextView
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    Like this: "></TextView>
+
+        <TextView
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BSCSF-F22-"></TextView>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/REG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:inputType="text"
+        android:hint="  Enter Rollnum"
+        android:background="@drawable/backfrony"
+        android:gravity="center"
+        ></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Integer part of 1st student "
+        android:layout_marginTop="23dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/integerPart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:hint=" Integer part of 1st student"
+        android:background="@drawable/backfrony"
+        android:gravity="center"
+        ></EditText>
+    <Button
+        android:id="@+id/entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E3135A"
+        android:layout_gravity="center"
+        android:layout_marginTop="7dp"
+        android:textColor="@color/white"
+        android:text="Enter"
+        ></Button>
+</LinearLayout>
